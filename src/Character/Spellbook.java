@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-import jawa.awt.*
 package Character;
+
+import d20References.Spell;
 
 /**
  *
@@ -15,7 +16,7 @@ public class Spellbook {
 
     //Variable
    
-    private string spellbookName,spellbookNotes;
+    private String spellbookName,spellbookNotes;
     private Spell spells;
     
     
@@ -24,5 +25,25 @@ public class Spellbook {
     spellbookNotes = "nothing of interest";
     spells = new Spell();
     }
-    
+//Methoden
+    //Getter
+    String getSpellbookName(){
+        return spellbookName;
+    }
+    String getSpellbookNotes(){
+        return spellbookNotes;
+    }
+    Spell getSpells(){
+        return spells;
+    }
+    //Setter
+    void setSpellbookName(String z){
+        spellbookName = z;
+    }
+    void setSpellbookNotes(String z){
+        spellbookNotes = z;
+    }
+    void setSpells(Spell y){
+        spells = y;
+    }
 }
